@@ -1,0 +1,182 @@
+/*! Building Interfaces HTML5 template */
+
+
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+
+
+body{ 
+    
+    font-family: 'futura', 'arial', 'helvetica'
+    
+
+    
+}
+        
+.wrapper {
+    width: 1000px;
+    margin: auto;
+    /*background-color: bisque;*/
+    min-height: 700px;
+    background-image: url("http://www.psdgraphics.com/file/light-blue-abstract.jpg" ); 
+   
+}
+
+ h1 {
+        padding: 5px;
+    text-align: center;
+    text-shadow: 2px 1px blue;
+        font-style: italic; }
+
+p {
+    padding-left:  10px;
+    padding-right: 10px;
+    text-align: justify;
+    
+}
+
+h2 {padding: 10px
+}
+
+ul {
+    list-style-type: square;
+    color: red;
+}
+
+a {
+    color: red;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+figure { 
+    background: red;
+    height: 200px;
+    float: right
+}
+
+figure img {
+    border: 5px solid red;
+}
+
+.photo {
+    max-width: 150px;
+    border:5px solid rgba(0,0,0 0.5);
+    margin: 12px;
+    float: left;
+    box-shadow: 5px 5px 5px #000;
+    
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+/* Intermediate */
+@media only screen and (min-width: 768px) {}
+/* Wide */
+@media only screen and (min-width: 1140px) {}
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
